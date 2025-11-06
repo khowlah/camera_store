@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  :root {
+    --main-color: black;
+    --secondry-color: red;
+    --white-color: white;
+    --dark-blue: #2c4755;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+    background-color: var(--main-color);
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* small screen */
+  @media (min-width: 768px) {
+    .container,
+    .containerfprm {
+      width: 759px;
+    }
+  }
+  /* medium screen */
+  @media (min-width: 992px) {
+    .container,
+    .containerfprm {
+      width: 970x;
+    }
+  }
+  /* large screen */
+  @media (min-width: 1200px) {
+    .container,
+    .containerfprm {
+      width: 1170px;
+    }
+  }
+.roundshape1 {
+width: 150px;
+height: 150px;
+background-color: #404040;
+border-radius: 75px;
+top: 25.5%;
+right: 31.5%;
+position: absolute;
+
+  }
+  .roundshape2 {
+    width: 150px;
+    height: 150px;
+    background-color: #404040;
+    border-radius: 75px;
+    position: absolute;
+    bottom: -14%;
+    left: 32%;
+    
+  }
+  @media (max-width: 1040px) {
+    .roundshape1,
+    .roundshape2 {
+      display: none;
+    }
+    
+  }
+  /* start header */
+  header {
+    padding: 10px;
+    background-color: var(--main-color);
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 0px 9px -4px white;
+    width: 100%;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .imghome {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15%;
+  top: 15%;
+}
+  header .logo {
+    width: 40px;
+  }
+  header .links {
+    position: relative;
+  }
+  header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+  }
+  header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  header .links .icon span {
+    background-color: var(--secondry-color);
+    margin-bottom: 5px;
+    height: 2px;
+    cursor: pointer;
+  }
+  header .links .icon span:first-child {
+    width: 100%;
+  }
+  header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s;
+  }
+  header .links .icon span:last-child {
+    width: 100%;
+  }
+  header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+  }
+  header .links:hover ul {
+    display: block;
+  }
+  header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+  header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--secondry-color);
+    transition: 0.3s;
+  }
+  header .links ul li a:hover {
+    padding-left: 25px;
+  }
+  header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+  }
+  .searching {
+    border-radius: 16px;
+    height: 30px;
+    transition: 0.3s;
+    width: 95px;
+    padding: 5px;
+    border: #9a9898 solid 1px;
+    outline: none;
+    background-color: var(--main-color);
+    color: #ddd;
+  }
+  .searching:hover {
+    border: var(--secondry-color) solid 2px;
+    outline: none;
+    width: 200px;
+  }
+  
+  /* end header */
+  /* start form */
+  .login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #202020;
+    max-width: 360px;
+    margin: 100px auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    display: inline;
+    padding: 10px 20px;
+    
+    background-color: #202020;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #53525233;
+    color: var(--white-color);
+    transition: 0.3s;
+  }
+  .form input:focus {
+    outline: none;
+    border-bottom: 1px solid red;
+  }
+  .login-page .form .containerform label {
+    color: #656464;
+    padding-right: 20px;
+  }
+  .login-page .form .containerform a {
+    text-decoration: none;
+  }
+  .form .signout {
+    background-color: red;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: var(--white-color);
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  .form .signout:hover
+  { 
+    background-color:#202020 ;
+    border: 1px solid red;
+  }
+  
+  .login-page ,
+  .form ,
+  .containerfprm {
+      width: 360px;
+  } 
+  
+  .form .register-form {
+    display: none;
+  }
+  
+    /* End form  */

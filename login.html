@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- work sans fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="images/photo-camera.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- caveat fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- start Header -->
+    <header>
+      <a href="index.html" class="linkhome" title="Home Page"><img src="images/home.png" alt="" class="imghome"></a>
+      <div class="container">
+        <img class="logo" src="images/photo-camera.png" alt="" />
+        <input
+          class="searching"
+          type="search"
+          placeholder="Search"
+          name="search"
+        />
+        
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html" target="_blank">Login</a></li>
+            <li><a href="payment.html" target="_blank">Payment</a></li>
+            <li><a href="product.html" target="_blank">Products</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="clear"></p>
+    </header>
+    <!-- End Header -->
+    <div class="roundshape1"></div>
+    <div class="roundshape2"></div>
+    <!-- start form  -->
+    <div class="login-page">
+      <div class="form">
+        <form class="containerform" action="index.html">
+          <input type="text" placeholder="username" required/>
+          <input type="password" placeholder="password" required minlength="5" maxlength="15"/>
+          <input type="submit" value="Sign in" class="signin">
+          <p class="message">
+            Not registered? <a href="logout.html">Create an account</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!-- end form  -->
+  </body>
+</html>

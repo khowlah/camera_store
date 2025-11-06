@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/payment.css" />
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- work sans fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="images/photo-camera.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- caveat fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Payment</title>
+  </head>
+  <body>
+    <!-- start Header -->
+    <header>
+      <a href="index.html" class="linkhome" title="Home Page"
+        ><img src="images/home.png" alt="" class="imghome"
+      /></a>
+      <div class="container">
+        <img class="logo" src="images/photo-camera.png" alt="" />
+        <input
+          class="searching"
+          type="search"
+          placeholder="Search"
+          name="search"
+        />
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html" target="_blank">Login</a></li>
+            <li><a href="payment.html" target="_blank">Payment</a></li>
+            <li><a href="product.html" target="_blank">Products</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="clear"></p>
+    </header>
+    <!-- End Header -->
+
+    <h2 class="special-heading">Payment</h2>
+    <p>
+      to complete the product phurchase please fill this form All transaction
+      are secure and encrypted
+    </p>
+
+    <div class="personinfo">
+      <div class="container1">
+        <p>personal infomation</p>
+        <span></span>
+        <form action="">
+          <input type="text" required placeholder="Name" />
+          <input type="text" required placeholder="+XXX cell phone" />
+          <input type="text" required placeholder="Email" />
+          <select name="coun" id="c">
+            <option value="1">اليمن</option>
+            <option value="2">عمان</option>
+            <option value="3">فلسطين</option>
+            <option value="4">الاردن</option>
+            <option value="5">سوريا</option>
+            <option value="6">الكويت</option>
+            <option value="7">البحرين</option>
+            <option value="8">قطر</option>
+            <option value="9">لبنان</option>
+            <option value="10">اخرى</option>
+          </select>
+
+          <input type="text" required placeholder="City" />
+
+          <input type="text" required placeholder="Address" />
+          <br /><br />
+          <div class="check">
+            <input type="checkbox" class="input-check" id="box1" />
+            <label for="box1">delivery address same as billing</label>
+          </div>
+        </form>
+      </div>
+      <div class="container2">
+        <p>Payment infomation</p>
+        <span></span>
+        <form action="">
+          <div class="radio">
+            <input type="radio" id="card1" name="cards" value="credit card" />
+            <label for="card1">credit card</label>
+            <br />
+            <br />
+            <input type="radio" id="card2" name="cards" value="ATM card" />
+            <label for="card2">ATM card</label>
+            <br /><br />
+            <input type="radio" id="card3" name="cards" value="smart card" />
+            <label for="card3">smart card</label>
+          </div>
+          <input
+            type="text"
+            id="cn"
+            required
+            placeholder="card number 123 123 123"
+            minlength="0"
+            maxlength="6"
+          />
+
+          <input
+            type="text"
+            required
+            placeholder="CVC"
+            minlength="0"
+            maxlength="4"
+            id="cv"
+          />
+          <br /><br />
+          <div class="check">
+            <input type="checkbox" class="input-check" id="box" />
+            <label for="box"
+              >save my card information for futures phurchase</label
+            >
+          </div>
+        </form>
+      </div>
+      <div class="container3">
+        <p>Product infomation</p>
+        <span></span>
+        <form action="">
+          <input
+            type="text"
+            id="camname"
+            required
+            placeholder="Camera's Name"
+          />
+          <input type="text" id="pri" required placeholder="Price" />
+          <input
+            type="number"
+            id="noc"
+            required
+            minlength="1"
+            placeholder="Number of Camera"
+          />
+          <select name="company" id="comp">
+            <option value="10">Canon</option>
+            <option value="11">Nicon</option>
+            <option value="3">Olympus</option>
+          </select>
+        </form>
+      </div>
+      <button>Buy now</button>
+    </div>
+    <!-- start footer -->
+    <footer>&copy; 2024 <span>cash</span> All Right Reserved</footer>
+    <!-- end footer -->
+  </body>
+</html>
