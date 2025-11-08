@@ -255,7 +255,7 @@ header .links ul li:not(:last-child) a {
 }
 
 .form .signin:hover {
-  background-color: blue;
+  background-color: rgb(221, 21, 194);
   border: 1px solid red;
 }
 
