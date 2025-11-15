@@ -87,6 +87,7 @@ position: absolute;
   position: absolute;
   right: 15%;
   top: 15%;
+  margin-top: 20px;
 }
   header .logo {
     width: 40px;
