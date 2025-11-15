@@ -23,7 +23,7 @@
   @media (min-width: 768px) {
     .container,
     .containerfprm {
-      width: 759px;
+      width: auto;
     }
   }
   /* medium screen */
